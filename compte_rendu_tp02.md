@@ -72,6 +72,24 @@ Cependant il est rarement préinstaller sur la plupart des distributions Linux. 
 
 ## Arrêt d’un processus
 
-     
- 
-  
+## Les tubes 
+
+tee permet de lire depuis l'entrée standard et écrire sur la sortie standard et dans les fichiers, tandis que cat permet la visualisation et concaténation de fichier
+
+ls | cat affiche les fichiers de type cat
+ls -l | cat > liste liste les fichiers du nom liste
+-ls -l | tee liste liste les fichiers contenu avec des informations tel que la date, l'heure de création, et les accès root@serveur1:~# ls -l | tee liste total 16 -rwxr-xr-x 1 root root 71 13 sept. 18:46 date.sh -rw-r--r-- 1 root root 94 13 sept. 18:47 date-toto.sh -rw-r--r-- 1 root root 209 13 sept. 19:06 liste -rw-r--r-- 1 root root 567 13 sept. 16:50 toto
+
+ls -l | tee liste | wc -l affiche 5
+
+## Journal système rsyslog 
+
+_ installater rsyslog avec apt install rsyslog, le PID est le 395
+
+_ Les messages issus des services standards sont écrit : /var/log/messages
+
+_ le service cron a pour but de planifier des taches régulières.
+
+_ tail -f la commande "tail" permet de visionner les dernières ligne d'un fichier texte, par défault celui-ci affiche uniquement les dix dernières lignes. Cet outil est le plus souvent utilisé pour voir les fichiers log souvent très long, -f Au fur et à mesure que de nouvelles lignes sont écrites dans le journal, la console se mettra à jour avec les nouvelles lignes.
+
+_ Le fichier /etc/logrotate.conf possède les configurations et les options par défault de l'utilitaire Logrotate
