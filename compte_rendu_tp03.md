@@ -14,5 +14,14 @@ Pour exécuter le fichier : ./analyse.sh si la permission n'est pas accordé vé
 
 ### Vérification du nombre de paramètres
 
-Création d'un script concat.sh de la manière que le script précédent.
+Création d'un script concat.sh de la même manière que le script précédent. Celui-ci contenant une boucle par rapport au nombre de paramètres : 
 ![concat](https://user-images.githubusercontent.com/90272616/136800554-f0a379f8-7d09-40cb-a780-c86ef757976a.PNG)
+
+### Argument type et droits
+
+Création d'un script test-fichier.sh de la même manière que les deux scripts précédent. Vérification du type de fichier avec " if [ -d $1 ] " pour le répertoire et " if [ -f $1 ] pour les fichiers.
+Vérifier les droits avec : 
+- -r
+- -w
+- -x
+![test-fichier](https://user-images.githubusercontent.com/90272616/136806942-20a9184a-1652-4eed-a530-172b948a2168.PNG)
