@@ -19,9 +19,12 @@ Création d'un script concat.sh de la même manière que le script précédent. 
 
 ### Argument type et droits
 
-Création d'un script test-fichier.sh de la même manière que les deux scripts précédent. Vérification du type de fichier avec " if [ -d $1 ] " pour le répertoire et " if [ -f $1 ] pour les fichiers.
+Création d'un script test-fichier.sh de la même manière que les deux scripts précédent. 
+Vérification de l'existence du fichier avec " if [ -e $1 ] "
+Vérification du type de fichier avec " if [ -d $1 ] " pour le répertoire et " if [ -f $1 ] " pour les fichiers.
 Vérifier les droits avec : 
 - -r
 - -w
 - -x
 ![test-fichier](https://user-images.githubusercontent.com/90272616/136806942-20a9184a-1652-4eed-a530-172b948a2168.PNG)
+
