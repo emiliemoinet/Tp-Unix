@@ -21,7 +21,9 @@ Création d'un script concat.sh de la même manière que le script précédent. 
 
 Création d'un script test-fichier.sh de la même manière que les deux scripts précédent. 
 Vérification de l'existence du fichier avec " if [ -e $1 ] "
+
 Vérification du type de fichier avec " if [ -d $1 ] " pour le répertoire et " if [ -f $1 ] " pour les fichiers.
+
 Vérifier les droits avec : 
 - -r
 - -w
