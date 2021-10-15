@@ -29,7 +29,29 @@ Vérifier les droits avec :
 - -w
 - -x
 
-![test-fichier](https://user-images.githubusercontent.com/90272616/136806942-20a9184a-1652-4eed-a530-172b948a2168.PNG)
+et 'ls -l $1 | awk '{'print $3'}' pour vérifier le propriétaire du fichier.
+
+![test-fichier](https://user-images.githubusercontent.com/90272616/137493312-970e167b-1b3e-46bf-a95e-20d0e9fc24b9.PNG)
+
+### Afficher le contenu d'un répertoire
+
+Création d'un listedir.sh comme les fichiers précédent.
+'ls -lkF $1 | grep -v '/' | awk '{print $9}' permet d'afficher uniquement les fichiers tandis que si on enlève le "-v" cela
+permet d'afficher uniquement les répertoires. 
+
+![listedir](https://user-images.githubusercontent.com/90272616/137497113-8d61e047-c54c-4ec4-b21c-b85f68f0386f.PNG)
+
+Ce qui donne lors du test : 
+
+root@serveur1:~# ./listedir.sh /boot
+## fichier dans /boot/
+/boot/config-5.10.0-8-amd64
+/boot/initrd.img-5.10.0-8-amd64
+/boot/System.map-5.10.0-8-amd64
+/boot/vmlinuz-5.10.0-8-amd64
+## répertoire dans /boot/
+/boot/folder/
+
 
 
 
