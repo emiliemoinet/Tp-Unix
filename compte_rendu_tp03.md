@@ -28,5 +28,8 @@ Vérifier les droits avec :
 - -r
 - -w
 - -x
+
 ![test-fichier](https://user-images.githubusercontent.com/90272616/136806942-20a9184a-1652-4eed-a530-172b948a2168.PNG)
+
+
 
