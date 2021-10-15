@@ -58,15 +58,23 @@ root@serveur1:~# ./listedir.sh /boot
 
 Création d'un script bash list-user.sh celui-ci ayant pour but d'afficher la liste des noms de login des utilisateurs avec un UID supérieur à 100.
 
+On parcours avec awk les lignes du fichier /etc/passwd qui correspondent 
+
 ![list_user](https://user-images.githubusercontent.com/90272616/137499599-943cc998-3dc5-4576-a4db-ea0daf122bb2.PNG)
 
 ```
 root@serveur1:~# ./list-user.sh
-nobody:65534
-systemd-timesync:101
-systemd-network:102
-systemd-resolve:103
-messagebus:104
-systemd-coredump:999
-sshd:105
+nobody
+systemd-timesync
+systemd-network
+systemd-resolve
+messagebus
+systemd-coredump
+sshd
 ```
+### Mon utilisateur existe t’il
+
+Création d'un script verif-user.sh 
+
+![verif_user](https://user-images.githubusercontent.com/90272616/137505781-0632940f-67cd-450f-8f82-55722366b202.PNG)
+
