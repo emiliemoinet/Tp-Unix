@@ -54,6 +54,19 @@ root@serveur1:~# ./listedir.sh /boot
 /boot/folder/
 ```
 
+### Lister les utilisateurs
 
+Création d'un script bash list-user.sh celui-ci ayant pour but d'afficher la liste des noms de login des utilisateurs avec un UID supérieur à 100.
 
+![list_user](https://user-images.githubusercontent.com/90272616/137499599-943cc998-3dc5-4576-a4db-ea0daf122bb2.PNG)
 
+```
+root@serveur1:~# ./list-user.sh
+nobody:65534
+systemd-timesync:101
+systemd-network:102
+systemd-resolve:103
+messagebus:104
+systemd-coredump:999
+sshd:105
+```
