@@ -43,14 +43,16 @@ permet d'afficher uniquement les répertoires.
 
 Ce qui donne lors du test : 
 
-`root@serveur1:~# ./listedir.sh /boot
+```
+root@serveur1:~# ./listedir.sh /boot
 ## fichier dans /boot/
 /boot/config-5.10.0-8-amd64
 /boot/initrd.img-5.10.0-8-amd64
 /boot/System.map-5.10.0-8-amd64
 /boot/vmlinuz-5.10.0-8-amd64
 ## répertoire dans /boot/
-/boot/folder/`
+/boot/folder/
+```
 
 
 
